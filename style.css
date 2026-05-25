@@ -1,0 +1,178 @@
+.head{
+    margin-left: 270px;
+    margin-top: 0.5%;
+    color: blue;
+    font-size: 37px;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: white;
+  background-color: white   ;
+  border-radius: 10px;
+  display: inline;
+  height: 130px;
+
+
+}
+.jj{
+ padding-top: 17px;
+    margin-left: 65px;
+    height: 25px;
+}
+.my{
+      height: 60px;
+
+    display: flex;
+    margin: 10px;
+    background-color: rgb(184, 184, 250);
+}
+.h2{
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.mikey{
+     margin-left: 75px;
+     padding-top: 10px;
+    height: 40px;
+}
+.h1{  font-weight: bold;
+    color: black;
+    margin-left: 5px;
+    padding-top: 20px;
+        text-decoration: none;
+}
+.h3{  font-weight: bold;
+    color: black;
+    margin-left: 355px;
+    padding-top: 20px;
+        text-decoration: none;
+}
+.h4{  font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 18px;
+        text-decoration: none;
+        background-color: white;
+    border: 3px solid purple;
+    height: 20px;
+    border-radius: 15px;
+
+    }
+    .selection{
+      position: relative;
+      left: 22%;
+    }
+ #sec{
+    margin-left: 20px;
+    width: 600px;
+ }
+ i{
+    position: absolute;
+    top: 11px;
+    font-size: 20px;
+ }
+ textarea{
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 30px;
+ }
+.Search{
+    color: white;
+}
+.the{
+    height:180px;
+    width: 1280px;
+    position: relative;
+    left: 85px;
+    top: 60%;
+    border-radius: 5px;
+ -ebkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
+h1{
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.main{
+height: 700px;
+width: 100%;
+
+ display: flex;
+}
+.div1{
+    margin: 10px;
+width: 20%;
+height: 500px;
+border: 2px solid black;
+border-radius: 10px;
+position: relative;
+top: 100px;
+left: 130px;
+}
+.div1:hover{
+-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
+.main2{
+
+    height: 700px;
+    width: 100%;
+     display: flex;
+}
+.div2{
+    margin: 10px;
+width: 20%;
+height: 500px;
+border: 2px solid black;
+border-radius: 10px;
+position: relative;
+left: 130px;
+top: 80px;
+}
+.div2:hover{
+-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
+.two{
+    width: 300px;
+    height: 300px;
+    border: 0px grey;
+    border-radius: 13px;
+}
+.price{
+   padding: 20px;
+}
+.para{
+padding-left: 15px;
+
+}
+.about{
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.ij{
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: blue;
+}
+.that{
+    text-align: center;
+    position: relative;
+    left: 40px;
+}
+.anonymous{
+    font-size: 20px;
+    color: black;
+    background-color: green;
+    border-radius: 10px;
+    text-decoration: none;  
+border: 2px solid black;
+} 
