@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLX - Buy and Sell for free anywhere in Pakistan</title>
+<title>Posting Rules | OLX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -60,39 +60,19 @@
     <a href="listings.html?cat=plots">Land & Plots</a>
   </div>
 </nav>
-
-<main>
-  <section class="hero wrap"><img src="images/pic1.webp" alt="Featured banner"></section>
-  <section class="categories wrap" id="home-cats"></section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Mobile Phones</h2><a href="listings.html?cat=mobiles">View More</a></div>
-    <div class="cards" id="home-phones"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Cars</h2><a href="listings.html?cat=cars">View More</a></div>
-    <div class="cards" id="home-cars"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Bikes & Motorcycles</h2><a href="listings.html?cat=bikes">View More</a></div>
-    <div class="cards" id="home-bikes"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Houses</h2><a href="listings.html?cat=houses">View More</a></div>
-    <div class="cards" id="home-houses"></div>
-  </section>
+<main class="page wrap legal"><h1>Rules of OLX / Posting guidelines</h1><div class="note">This is a student assignment clone of the OLX Pakistan layout. These terms are original classroom wording covering the same topics as a classifieds site. They are not OLX’s official legal documents.</div>
+<ul>
+<li><strong>Local posting:</strong> Offers must be in Pakistan. Foreign IPs and foreign numbers are not permitted. One account, one phone number.</li>
+<li><strong>Ad duration:</strong> A compliant ad stays active for 30 days. You may not repost the same ad after deletion until that window ends.</li>
+<li><strong>Legal goods:</strong> Only items and services allowed under Pakistan law.</li>
+<li><strong>One product per ad:</strong> Bundles that look like a shop dump may be rejected as “multiple products”.</li>
+<li><strong>Price:</strong> Use a realistic PKR price. “0”, fake, or clickbait prices can be rejected.</li>
+<li><strong>Photos:</strong> Up to 12 photos in a live product; this demo accepts one path. No stolen brand catalogues.</li>
+<li><strong>Competitors:</strong> Ads promoting other classifieds platforms are not allowed.</li>
+<li>How to post: choose a category, add title, description, price, location, photos, accept agreements, then Post now.</li>
+</ul>
+<p>Related: <a href="prohibited.html">Prohibited items</a> · <a href="ad-limits.html">Free ad limits</a> · <a href="sell.html">Post an ad</a></p>
 </main>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("home-cats").innerHTML = OLX_CATS.map(c =>
-    '<a class="cat-item" href="listings.html?cat='+c.id+'"><span class="cat-icon" style="background:#f2f4f5">'+c.icon+'</span><span>'+c.name+'</span></a>'
-  ).join("");
-  olxRender("#home-phones", OLX_ADS.filter(a=>a.category==="mobiles").slice(0,4));
-  olxRender("#home-cars", OLX_ADS.filter(a=>a.category==="cars").slice(0,4));
-  olxRender("#home-bikes", OLX_ADS.filter(a=>a.category==="bikes").slice(0,4));
-  olxRender("#home-houses", OLX_ADS.filter(a=>a.category==="houses").slice(0,4));
-});
-</script>
-
 <section class="app-banner">
   <div class="app-copy">
     <h2>Find amazing deals on the go.</h2>

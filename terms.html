@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLX - Buy and Sell for free anywhere in Pakistan</title>
+<title>Terms of Use | OLX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -60,39 +60,26 @@
     <a href="listings.html?cat=plots">Land & Plots</a>
   </div>
 </nav>
-
-<main>
-  <section class="hero wrap"><img src="images/pic1.webp" alt="Featured banner"></section>
-  <section class="categories wrap" id="home-cats"></section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Mobile Phones</h2><a href="listings.html?cat=mobiles">View More</a></div>
-    <div class="cards" id="home-phones"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Cars</h2><a href="listings.html?cat=cars">View More</a></div>
-    <div class="cards" id="home-cars"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Bikes & Motorcycles</h2><a href="listings.html?cat=bikes">View More</a></div>
-    <div class="cards" id="home-bikes"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Houses</h2><a href="listings.html?cat=houses">View More</a></div>
-    <div class="cards" id="home-houses"></div>
-  </section>
+<main class="page wrap legal"><h1>Terms of Use</h1><div class="note">This is a student assignment clone of the OLX Pakistan layout. These terms are original classroom wording covering the same topics as a classifieds site. They are not OLX’s official legal documents.</div>
+<p>Last updated: 21 September 2026.</p>
+<p>By creating an account, posting content, or using this classifieds website, you enter a binding agreement with the operator of this assignment site (“we”, “the Service”). If you do not agree, do not use the Service.</p>
+<h2>1. The Service</h2>
+<p>The Service is an online notice board that lets people in Pakistan publish offers and contact each other. We are not a party to any sale, rental, job, or service contract between users. We do not inspect items, hold money in escrow, or guarantee that a listing is accurate.</p>
+<h2>2. Eligibility</h2>
+<p>You must be able to form a contract under Pakistan law. You may keep only one account per phone number. Accounts created from foreign IPs, or ads that advertise foreign numbers or delivery from outside Pakistan, are not allowed.</p>
+<h2>3. Your content</h2>
+<p>You are solely responsible for photos, titles, prices, and descriptions you upload. You confirm that you own or have permission to publish that content, that it does not infringe copyright or privacy, and that you grant us a licence to host, display, and moderate it so the Service can function.</p>
+<h2>4. Posting rules</h2>
+<p>Ads must follow the <a href="rules.html">Posting Rules</a> and <a href="prohibited.html">Prohibited Items</a> list. An ad that complies may stay live for 30 days. Repeating the same ad after deletion before that period ends is not allowed. We may refuse, edit, or remove content that breaks these terms, including competitor ads and multi-product dumps.</p>
+<h2>5. Featured ads</h2>
+<p>Paid placement such as Featured Ads or Boost to Top is optional, described in the <a href="featured.html">Featured Ads</a> page, and fees are non-refundable once delivery starts, except where required by law.</p>
+<h2>6. Acceptable use</h2>
+<p>Do not scrape the site, attack our systems, impersonate others, harvest personal data, or use the Service to commit fraud. We may suspend accounts that create a safety or legal risk.</p>
+<h2>7. Liability</h2>
+<p>The Service is provided as-is for a class assignment. We are not liable for deals that go wrong between users. You agree to meet in public, inspect goods, and follow the <a href="safety.html">Safety Tips</a>.</p>
+<h2>8. Changes</h2>
+<p>We may update these terms. Continued use after a notice on this page means you accept the new version.</p>
 </main>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("home-cats").innerHTML = OLX_CATS.map(c =>
-    '<a class="cat-item" href="listings.html?cat='+c.id+'"><span class="cat-icon" style="background:#f2f4f5">'+c.icon+'</span><span>'+c.name+'</span></a>'
-  ).join("");
-  olxRender("#home-phones", OLX_ADS.filter(a=>a.category==="mobiles").slice(0,4));
-  olxRender("#home-cars", OLX_ADS.filter(a=>a.category==="cars").slice(0,4));
-  olxRender("#home-bikes", OLX_ADS.filter(a=>a.category==="bikes").slice(0,4));
-  olxRender("#home-houses", OLX_ADS.filter(a=>a.category==="houses").slice(0,4));
-});
-</script>
-
 <section class="app-banner">
   <div class="app-copy">
     <h2>Find amazing deals on the go.</h2>

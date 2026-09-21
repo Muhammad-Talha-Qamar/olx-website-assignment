@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLX - Buy and Sell for free anywhere in Pakistan</title>
+<title>Post an ad | OLX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -61,37 +61,32 @@
   </div>
 </nav>
 
-<main>
-  <section class="hero wrap"><img src="images/pic1.webp" alt="Featured banner"></section>
-  <section class="categories wrap" id="home-cats"></section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Mobile Phones</h2><a href="listings.html?cat=mobiles">View More</a></div>
-    <div class="cards" id="home-phones"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Cars</h2><a href="listings.html?cat=cars">View More</a></div>
-    <div class="cards" id="home-cars"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Bikes & Motorcycles</h2><a href="listings.html?cat=bikes">View More</a></div>
-    <div class="cards" id="home-bikes"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Houses</h2><a href="listings.html?cat=houses">View More</a></div>
-    <div class="cards" id="home-houses"></div>
-  </section>
+<main class="page wrap form-wide">
+  <div class="steps"><span class="on">1. Category</span><span class="on">2. Details</span><span class="on">3. Agreements</span></div>
+  <h1>Post your ad</h1>
+  <p class="sub">Free ads stay live for 30 days if they follow posting rules.</p>
+  <form id="sell-form">
+    <div class="field"><label>Category</label>
+      <select required>
+        <option value="">Choose</option>
+        <option>Mobiles</option><option>Cars</option><option>Bikes</option>
+        <option>Houses</option><option>Plots</option><option>Electronics</option>
+        <option>Jobs</option><option>Services</option>
+      </select></div>
+    <div class="field"><label>Title</label><input required maxlength="70" placeholder="Keep it short and clear"></div>
+    <div class="field"><label>Description</label><textarea rows="5" required maxlength="4096"></textarea></div>
+    <div class="field"><label>Price (PKR)</label><input type="number" required min="1"></div>
+    <div class="field"><label>Location in Pakistan</label><input required placeholder="City / area"></div>
+    <div class="field"><label>Photo URL or file name</label><input placeholder="images/pic2.webp"></div>
+    <h2 style="margin-top:18px">Required agreements</h2>
+    <label class="check"><input id="agree-terms" type="checkbox"> I agree to the <a href="terms.html">Terms of Use</a> and <a href="seller-terms.html">Seller Platform Terms</a></label>
+    <label class="check"><input id="agree-rules" type="checkbox"> I have read the <a href="rules.html">Posting Rules</a>, <a href="prohibited.html">Prohibited Items</a>, and <a href="ad-limits.html">Free Ad Limits</a></label>
+    <label class="check"><input id="agree-legal" type="checkbox"> I confirm this offer is legal in Pakistan, uses a Pakistani location/phone, and is not a duplicate or competitor ad</label>
+    <p class="error"></p>
+    <div class="success" id="posted">Your ad was saved locally for this assignment. In a live site it would be reviewed against posting rules.</div>
+    <button class="btn btn-dark" type="submit">Post now</button>
+  </form>
 </main>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("home-cats").innerHTML = OLX_CATS.map(c =>
-    '<a class="cat-item" href="listings.html?cat='+c.id+'"><span class="cat-icon" style="background:#f2f4f5">'+c.icon+'</span><span>'+c.name+'</span></a>'
-  ).join("");
-  olxRender("#home-phones", OLX_ADS.filter(a=>a.category==="mobiles").slice(0,4));
-  olxRender("#home-cars", OLX_ADS.filter(a=>a.category==="cars").slice(0,4));
-  olxRender("#home-bikes", OLX_ADS.filter(a=>a.category==="bikes").slice(0,4));
-  olxRender("#home-houses", OLX_ADS.filter(a=>a.category==="houses").slice(0,4));
-});
-</script>
 
 <section class="app-banner">
   <div class="app-copy">

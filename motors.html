@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLX - Buy and Sell for free anywhere in Pakistan</title>
+<title>Motors | OLX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -62,34 +62,20 @@
 </nav>
 
 <main>
-  <section class="hero wrap"><img src="images/pic1.webp" alt="Featured banner"></section>
-  <section class="categories wrap" id="home-cats"></section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Mobile Phones</h2><a href="listings.html?cat=mobiles">View More</a></div>
-    <div class="cards" id="home-phones"></div>
-  </section>
+  <section class="hero wrap"><img src="images/pic1.webp" alt="Motors"></section>
   <section class="listings wrap">
     <div class="section-head"><h2>Cars</h2><a href="listings.html?cat=cars">View More</a></div>
-    <div class="cards" id="home-cars"></div>
+    <div class="cards" id="m-cars"></div>
   </section>
   <section class="listings wrap">
-    <div class="section-head"><h2>Bikes & Motorcycles</h2><a href="listings.html?cat=bikes">View More</a></div>
-    <div class="cards" id="home-bikes"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Houses</h2><a href="listings.html?cat=houses">View More</a></div>
-    <div class="cards" id="home-houses"></div>
+    <div class="section-head"><h2>Bikes</h2><a href="listings.html?cat=bikes">View More</a></div>
+    <div class="cards" id="m-bikes"></div>
   </section>
 </main>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("home-cats").innerHTML = OLX_CATS.map(c =>
-    '<a class="cat-item" href="listings.html?cat='+c.id+'"><span class="cat-icon" style="background:#f2f4f5">'+c.icon+'</span><span>'+c.name+'</span></a>'
-  ).join("");
-  olxRender("#home-phones", OLX_ADS.filter(a=>a.category==="mobiles").slice(0,4));
-  olxRender("#home-cars", OLX_ADS.filter(a=>a.category==="cars").slice(0,4));
-  olxRender("#home-bikes", OLX_ADS.filter(a=>a.category==="bikes").slice(0,4));
-  olxRender("#home-houses", OLX_ADS.filter(a=>a.category==="houses").slice(0,4));
+  olxRender("#m-cars", OLX_ADS.filter(a=>a.category==="cars"));
+  olxRender("#m-bikes", OLX_ADS.filter(a=>a.category==="bikes"));
 });
 </script>
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OLX - Buy and Sell for free anywhere in Pakistan</title>
+<title>Help Center | OLX</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -61,37 +61,29 @@
   </div>
 </nav>
 
-<main>
-  <section class="hero wrap"><img src="images/pic1.webp" alt="Featured banner"></section>
-  <section class="categories wrap" id="home-cats"></section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Mobile Phones</h2><a href="listings.html?cat=mobiles">View More</a></div>
-    <div class="cards" id="home-phones"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Cars</h2><a href="listings.html?cat=cars">View More</a></div>
-    <div class="cards" id="home-cars"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Bikes & Motorcycles</h2><a href="listings.html?cat=bikes">View More</a></div>
-    <div class="cards" id="home-bikes"></div>
-  </section>
-  <section class="listings wrap">
-    <div class="section-head"><h2>Houses</h2><a href="listings.html?cat=houses">View More</a></div>
-    <div class="cards" id="home-houses"></div>
-  </section>
+<div class="help-hero">
+  <h1>HOW CAN WE HELP YOU?</h1>
+  <input placeholder="Search">
+</div>
+<main class="wrap">
+  <div class="help-grid">
+    <a class="help-card" href="about.html"><h3>Important Updates</h3><p>Classroom clone notes and how this assignment site is structured.</p></a>
+    <a class="help-card" href="featured.html"><h3>Ad of the Week</h3><p>How featured placement and Ad of the Week style boosts work.</p></a>
+    <a class="help-card" href="seller-terms.html"><h3>Seller Platform Terms</h3><p>Terms and conditions related to posting and seller tools.</p></a>
+    <a class="help-card" href="safety.html"><h3>Safety</h3><p>Safety measures for buying and selling in person.</p></a>
+    <a class="help-card" href="privacy.html"><h3>Legal & Privacy</h3><p>Privacy Policy, Cookie Policy, and Terms of Use.</p></a>
+    <a class="help-card" href="featured.html"><h3>Featured Ads & Business Packages</h3><p>Paid visibility options for sellers and shops.</p></a>
+    <a class="help-card" href="ad-limits.html"><h3>Free Ad Limits</h3><p>How many free ads you can post and how long they stay live.</p></a>
+    <a class="help-card" href="featured.html"><h3>Boost to Top</h3><p>Move an ad higher in its category for a limited time.</p></a>
+    <a class="help-card" href="account.html"><h3>My Account / Profile</h3><p>Create, edit, and protect your account.</p></a>
+    <a class="help-card" href="rules.html"><h3>Posting and Managing Ads</h3><p>How to post, edit, hide a number, and why ads are rejected.</p></a>
+    <a class="help-card" href="business.html"><h3>Payments & Invoices</h3><p>Billing for featured ads in this assignment demo.</p></a>
+    <a class="help-card" href="chat.html"><h3>Chat</h3><p>Message other users from an ad page.</p></a>
+    <a class="help-card" href="safety.html"><h3>How do I buy on OLX?</h3><p>Search, chat, meet, and inspect before you pay.</p></a>
+    <a class="help-card" href="contact.html"><h3>About Us / Contact</h3><p>Contact details for this assignment site.</p></a>
+    <a class="help-card" href="prohibited.html"><h3>Prohibited items</h3><p>What you cannot list on the platform.</p></a>
+  </div>
 </main>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("home-cats").innerHTML = OLX_CATS.map(c =>
-    '<a class="cat-item" href="listings.html?cat='+c.id+'"><span class="cat-icon" style="background:#f2f4f5">'+c.icon+'</span><span>'+c.name+'</span></a>'
-  ).join("");
-  olxRender("#home-phones", OLX_ADS.filter(a=>a.category==="mobiles").slice(0,4));
-  olxRender("#home-cars", OLX_ADS.filter(a=>a.category==="cars").slice(0,4));
-  olxRender("#home-bikes", OLX_ADS.filter(a=>a.category==="bikes").slice(0,4));
-  olxRender("#home-houses", OLX_ADS.filter(a=>a.category==="houses").slice(0,4));
-});
-</script>
 
 <section class="app-banner">
   <div class="app-copy">
