@@ -1,0 +1,20 @@
+---
+description: Commit and push app changes so Hostinger auto-deploys olx.talbyte.com
+alwaysApply: true
+---
+
+# Deploy on every change
+
+This app is live at **https://olx.talbyte.com**. Hostinger auto-deploys from GitHub on every push to `main`.
+
+## After making application changes
+
+1. **Commit** the changes (follow the repo’s git commit protocol / HEREDOC style).
+2. **Push** to `origin` `main` on [Muhammad-Talha-Qamar/olx-website-assignment](https://github.com/Muhammad-Talha-Qamar/olx-website-assignment.git).
+3. Do this **without waiting** for the user to ask — a push updates the live domain.
+
+## Scope
+
+- Applies to app source (HTML, CSS, JS, images, assets).
+- Skip push-only noise (e.g. local `.DS_Store`) unless the user asks.
+- Do **not** force-push or rewrite published history unless the user explicitly requests it.
